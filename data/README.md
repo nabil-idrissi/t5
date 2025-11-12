@@ -1,5 +1,5 @@
-I'm reconstructing the dataset to match the needed format to finetune the T5 model using instructions.
-The article column of the initial 'cnn_dailymail' is turned into this format:
+The dataset was reconstructed to match the needed format. One that let us finetune the T5 model on instructions.
+The first column (article) of the initial 'cnn_dailymail' dataset is turned into this:
 
 > > A randomly chosen instruction from a list + initial cnn_dailymail column
 
@@ -7,8 +7,8 @@ For example:
 
 > > > LONDON, England (Reuters) -- Harry Potter star Daniel Radcliffe gains access to a reported £20 million...
 
-Turns into
+Turns into:
 
 > > > Summarize this text: LONDON, England (Reuters) -- Harry Potter star Daniel Radcliffe gains access to a reported £20 million...
 
-Also, I save this new data to have a fair comparison later on, when i'll need to evaluate all models. As randomly choosing instructions would make training/testing on the huggingface dataset differ between models, that's why I'm saving one version that can be used across all of them.
+Also, I save this new data to make a fair comparison later on, when evaluating all models, as randomly choosing instructions would make training/testing on the huggingface dataset differ between models, and one version that can be used across all of them would solve this.
