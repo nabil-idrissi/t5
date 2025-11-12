@@ -11,4 +11,4 @@ Turns into:
 
 > > > Summarize this text: LONDON, England (Reuters) -- Harry Potter star Daniel Radcliffe gains access to a reported £20 million...
 
-Also, I save this new data to make a fair comparison later on, when evaluating all models, as randomly choosing instructions would make training/testing on the huggingface dataset differ between models, and one version that can be used across all of them would solve this.
+Also, this new data is saved to make a fair comparison later on, when evaluating all models, as randomly choosing instructions would make training/testing on the huggingface dataset differ between models, and one version that can be used across all of them would solve this.
